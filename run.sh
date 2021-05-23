@@ -1,1 +1,2 @@
-./main planetarySystem.json
+gcc -o main main.c
+./main
