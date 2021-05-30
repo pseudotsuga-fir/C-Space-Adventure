@@ -2,12 +2,11 @@
 #include <stdio.h>
 #include <string.h>
 #include "input.h"
-// #include <json-c/json.h>
+#include "./cJSON/cJSON.h"
 
 int main(int argc, char *argv[])
 {
-  // FILE *fp;
-  // char json_buffer[1024];
+  createJSONtree(argv[1]);
   printIntro();
   printGreeting(getInput("What is your name? : "));
   if(askRandomPlanet(getInput("\nWould you like to travel to a random planet? (Y/N) : "))){

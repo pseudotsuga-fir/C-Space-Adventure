@@ -1,4 +1,5 @@
 gcc -c input.c
 gcc -c main.c
-gcc input.o main.o -o main
-./main
+gcc -c ./cJSON/cJSON.c
+gcc -o main input.o main.o cJSON.o
+# ./main

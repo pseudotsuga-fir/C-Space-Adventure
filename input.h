@@ -1,3 +1,5 @@
+void createJSONtree(char *filePath);
+
 void printIntro();
 
 char * getInput(char prompt[120]);
